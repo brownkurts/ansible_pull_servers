@@ -1,12 +1,12 @@
 #- {  path: "/mnt/unraid", src: "192.168.2.21:/mnt/user/unraid" }
      
 - name: mount the nfsshare in client side
-    mount:
-      fstype: nfs
-      opts: defaults
-      dump: 0
-      passno: 0
-      state: mounted
-      src: "192.168.2.22:/mnt/Public"
-      path: "/mnt/Public"
+  mount:
+    fstype: nfs
+    opts: defaults
+    dump: 0
+    passno: 0
+    state: mounted
+    src: "192.168.2.22:/mnt/Public"
+    path: "/mnt/Public"
       
