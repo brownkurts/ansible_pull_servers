@@ -1,9 +1,12 @@
-vars:
+- hosts: localhost
+  connection: local
+  become: true
+  vars:
     nfsmounts:
       - {  path: "/mnt/Public", src: "192.168.2.22:/mnt/Public" }
       - {  path: "/mnt/unraid", src: "192.168.2.21:/mnt/user/unraid" }
      
-tasks:
+  tasks:
       - name: mount the nfsshare in client side
         mount:
           fstype: nfs
