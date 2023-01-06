@@ -1,5 +1,5 @@
 - name: add ansible user
-    user:
+  user:
       name: ansible
       system: yes
 
