@@ -5,4 +5,4 @@
       - mc
       - net-tools
       - python3-psutil
-      - nfs-utils
+      - nfs-common
